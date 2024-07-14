@@ -11,13 +11,10 @@ function BorderCountryDetails() {
       .then((res) => res.json())
       .then((data) => setCountry(data));
   }, [borderName]);
-  console.log(country);
 
   if (!country) {
     return <div className="loading">Loading...</div>;
   }
-
-  console.log(country);
 
   return <NewPageDetailsCard country={country[0]} />;
 }

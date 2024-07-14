@@ -1,19 +1,12 @@
 import Border from "../components/Borders";
-// import { Link } from "react-router-dom";
 import BackButton from "./BackButton";
 
 function NewPageDetailsCard({ country }) {
   const borders = country.borders ?? "Not Found...";
 
-  console.log(country);
-
   return (
     <div className="details-country-container">
       <div>
-        {/* <Link to="/" className="back-btn">
-          <i className="fa-solid fa-arrow-left"></i>
-          <span>Back</span>
-        </Link> */}
         <BackButton />
       </div>
 

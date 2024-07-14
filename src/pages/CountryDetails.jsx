@@ -3,7 +3,6 @@ import NewPageDetailsCard from "../components/NewPageDetailsCard";
 
 function CountryDetails({ countries }) {
   const { countryName } = useParams();
-  console.log(countryName);
 
   const country = countries.find(
     (country) => country.name.common === countryName.replaceAll("-", " ")
